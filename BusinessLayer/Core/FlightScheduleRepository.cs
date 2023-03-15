@@ -5,11 +5,9 @@ namespace BusinessRepository.Core
 {
     public class FlightScheduleRepository : IFlightScheduleRepository
     {
-        private readonly IOrderRepository _orderRepository;
-
-        public FlightScheduleRepository(IOrderRepository orderRepository) 
+        public FlightScheduleRepository() 
         {
-            _orderRepository = orderRepository;
+            
         }
 
         public Task<List<Schedule>> GetFlightScehdule()
