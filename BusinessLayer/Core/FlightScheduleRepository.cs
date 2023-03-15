@@ -5,11 +5,6 @@ namespace BusinessRepository.Core
 {
     public class FlightScheduleRepository : IFlightScheduleRepository
     {
-        public FlightScheduleRepository() 
-        {
-            
-        }
-
         public Task<List<Schedule>> GetFlightScehdule()
         {
             List<Schedule> schedules = new List<Schedule>()
